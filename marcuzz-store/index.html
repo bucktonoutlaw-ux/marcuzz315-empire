@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Marcuzz Digital Store — AI-Powered Templates, Prompts & Productivity Tools</title>
+<meta name="description" content="Premium digital products: Notion templates, budget spreadsheets, AI prompt packs, planners and more. Instant download. Made by $marcuzz315.">
+<meta name="keywords" content="notion templates, budget spreadsheet, AI prompts, digital products, productivity templates, planner templates, resume template, content calendar">
+<meta property="og:title" content="Marcuzz Digital Store — Templates, Prompts & Tools">
+<meta property="og:description" content="Premium digital products for productivity, finance, and AI. Instant download.">
+<link rel="canonical" href="https://marcuzz-store.netlify.app">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Marcuzz Digital Store","description":"AI-powered digital products: templates, spreadsheets, prompt packs, and planners.","url":"https://marcuzz-store.netlify.app"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:linear-gradient(180deg,#0a0a14,#0f0f1e);color:#e2e8f0;font-family:'Inter','Segoe UI',sans-serif;min-height:100vh}
+a{color:#818cf8;text-decoration:none}
+::selection{background:#6366f1;color:#fff}
+.nav{position:sticky;top:0;z-index:50;background:rgba(15,15,25,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.06);padding:12px 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-size:20px;font-weight:800;cursor:pointer}.nav-logo span{color:#818cf8}
+.tip-btn{display:inline-block;background:linear-gradient(135deg,#00d632,#00b828);color:#fff;padding:8px 18px;font-size:13px;font-weight:700;border:none;border-radius:8px;cursor:pointer;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px 20px}
+.hero{text-align:center;padding:48px 0}
+.hero h1{font-size:clamp(28px,5vw,48px);font-weight:900;line-height:1.1;margin-bottom:16px}
+.hero h1 span{color:#818cf8}
+.hero p{font-size:17px;color:#94a3b8;max-width:600px;margin:0 auto 24px}
+.hero .badges{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.badge{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:6px 16px;font-size:13px;color:#94a3b8}
+.section-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#64748b;margin:40px 0 20px;display:flex;align-items:center;gap:12px}
+.section-title::after{content:'';flex:1;height:1px;background:rgba(255,255,255,0.06)}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.product{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:24px;transition:all 0.25s;position:relative;overflow:hidden}
+.product:hover{border-color:rgba(99,102,241,0.4);transform:translateY(-3px)}
+.product .tag{position:absolute;top:14px;right:14px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700}
+.product .tag.free{background:linear-gradient(135deg,#00d632,#00b828)}
+.product .icon{font-size:36px;margin-bottom:14px}
+.product h3{font-size:17px;font-weight:700;margin-bottom:6px}
+.product .desc{font-size:13px;color:#94a3b8;line-height:1.6;margin-bottom:14px}
+.product .features{list-style:none;margin-bottom:18px}
+.product .features li{font-size:12px;color:#64748b;padding:3px 0}
+.product .features li::before{content:'\2713 ';color:#818cf8;font-weight:700}
+.product .price{font-size:22px;font-weight:800;color:#818cf8;margin-bottom:14px}
+.product .price .og{text-decoration:line-through;color:#475569;font-size:14px;font-weight:400;margin-left:8px}
+.get-btn{display:block;width:100%;padding:12px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;text-align:center;text-decoration:none;transition:all 0.2s}
+.get-btn:hover{opacity:0.9;transform:scale(1.01)}
+.get-btn.free-btn{background:linear-gradient(135deg,#00d632,#00b828)}
+.trust{display:flex;justify-content:center;gap:32px;margin:48px 0;padding:24px;background:rgba(255,255,255,0.02);border-radius:16px;border:1px solid rgba(255,255,255,0.04);flex-wrap:wrap}
+.trust-item{text-align:center}
+.trust-item .icon{font-size:24px;margin-bottom:6px}
+.trust-item .text{font-size:13px;color:#94a3b8}
+.ad-banner{background:linear-gradient(135deg,rgba(99,102,241,0.1),rgba(168,85,247,0.1));border:1px dashed rgba(99,102,241,0.3);border-radius:12px;padding:14px 20px;text-align:center;font-size:12px;color:rgba(255,255,255,0.4);margin:24px 0}
+.cta-box{text-align:center;padding:36px;background:linear-gradient(135deg,rgba(0,214,50,0.08),rgba(0,184,40,0.08));border-radius:16px;border:1px solid rgba(0,214,50,0.15);margin:40px 0}
+.cta-box h3{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta-box p{font-size:14px;color:#94a3b8;margin-bottom:20px}
+footer{text-align:center;padding:40px 0 24px;color:#475569;font-size:13px}
+footer p+p{margin-top:6px}
+@media(max-width:600px){.hero{padding:28px 0}.trust{gap:20px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-logo"><span>Marcuzz</span> Store</div>
+  <div style="display:flex;gap:12px;align-items:center">
+    <a href="https://ai-toolhub.netlify.app" style="color:#94a3b8;font-size:14px">Free AI Tools</a>
+    <a href="https://cash.app/$marcuzz315" target="_blank" class="tip-btn">💰 $marcuzz315</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="ad-banner"><!-- AdSense Unit --></div>
+
+  <div class="hero">
+    <h1>Digital Products That <span>Actually Work</span></h1>
+    <p>Premium templates, spreadsheets, AI prompt packs, and productivity tools. Built by someone who actually uses them.</p>
+    <div class="badges">
+      <span class="badge">⚡ Instant Download</span>
+      <span class="badge">🔄 Free Updates</span>
+      <span class="badge">💰 Money-Back Guarantee</span>
+    </div>
+  </div>
+
+  <div class="trust">
+    <div class="trust-item"><div class="icon">📦</div><div class="text">20+ Products</div></div>
+    <div class="trust-item"><div class="icon">⭐</div><div class="text">5-Star Rated</div></div>
+    <div class="trust-item"><div class="icon">🔒</div><div class="text">Secure Checkout</div></div>
+    <div class="trust-item"><div class="icon">⚡</div><div class="text">Instant Access</div></div>
+  </div>
+
+  <!-- NOTION TEMPLATES -->
+  <div class="section-title">📋 Notion Templates</div>
+  <div class="products">
+    <div class="product">
+      <span class="tag">Popular</span>
+      <div class="icon">💰</div>
+      <h3>Ultimate Budget Tracker</h3>
+      <p class="desc">Track income, expenses, savings goals, and subscriptions all in one Notion dashboard.</p>
+      <ul class="features"><li>Auto-calculating totals</li><li>Monthly overview charts</li><li>Bill reminders</li><li>Savings goal tracker</li></ul>
+      <div class="price">$4.99 <span class="og">$9.99</span></div>
+      <a href="#" class="get-btn">Get It Now →</a>
+    </div>
+    <div class="product">
+      <span class="tag free">Free</span>
+      <div class="icon">✅</div>
+      <h3>Habit Tracker Dashboard</h3>
+      <p class="desc">Build better habits with daily tracking, streaks, and weekly reviews.</p>
+      <ul class="features"><li>Daily check-in system</li><li>Streak counter</li><li>Weekly reflection prompts</li><li>Habit categories</li></ul>
+      <div class="price">FREE</div>
+      <a href="#" class="get-btn free-btn">Download Free →</a>
+    </div>
+    <div class="product">
+      <div class="icon">📅</div>
+      <h3>Content Calendar Pro</h3>
+      <p class="desc">Plan and schedule content across all social platforms. Never run out of ideas.</p>
+      <ul class="features"><li>Multi-platform planning</li><li>Content idea bank</li><li>Hashtag library</li><li>Analytics tracking</li></ul>
+      <div class="price">$3.99 <span class="og">$7.99</span></div>
+      <a href="#" class="get-btn">Get It Now →</a>
+    </div>
+    <div class="product">
+      <div class="icon">🎯</div>
+      <h3>Job Search Command Center</h3>
+      <p class="desc">Track applications, interviews, follow-ups, and networking all in one place.</p>
+      <ul class="features"><li>Application pipeline</li><li>Interview prep notes</li><li>Follow-up reminders</li><li>Salary comparisons</li></ul>
+      <div class="price">$4.99</div>
+      <a href="#" class="get-btn">Get It Now →</a>
+    </div>
+    <div class="product">
+      <div class="icon">🍽️</div>
+      <h3>Meal Prep Planner</h3>
+      <p class="desc">Plan weekly meals, auto-generate grocery lists, and track nutrition.</p>
+      <ul class="features"><li>Weekly meal calendar</li><li>Auto grocery lists</li><li>Recipe database</li><li>Nutrition tracker</li></ul>
+      <div class="price">$3.99</div>
+      <a href="#" class="get-btn">Get It Now →</a>
+    </div>
+    <div class="product">
+      <div class="icon">📚</div>
+      <h3>Student Planner Pro</h3>
+      <p class="desc">Manage classes, assignments, exams, and study sessions like a pro.</p>
+      <ul class="features"><li>Class schedule</li><li>Assignment tracker</li><li>Exam countdown</li><li>GPA calculator</li></ul>
+      <div class="price">$2.99 <span class="og">$5.99</span></div>
+      <a href="#" class="get-btn">Get It Now →</a>
+    </div>
+  </div>
+
+  <!-- SPREADSHEETS -->
+  <div class="section-title">📊 Finance Spreadsheets</div>
+  <div class="products">
+    <div class="product">
+      <span class="tag">Best Seller</span>
+      <div class="icon">📈</div>
+      <h3>Net Worth Tracker</h3>
+      <p class="desc">Track all assets, debts, and investments. Watch your net worth grow over time.</p>
+      <ul class="features"><li>Asset categories</li><li>Debt payoff tracker</li><li>Monthly snapshots</li><li>Growth charts</li></ul>
+      <div class="price">$4.99</div>
+      <a href="#" class="get-btn">Get It Now →</a>
+    </div>
+    <div class="product">
+      <div class="icon">💳</div>
+      <h3>Debt Payoff Calculator</h3>
+      <p class="desc">Snowball or avalanche method. See exactly when you'll be debt-free.</p>
+      <ul class="features"><li>Multiple strategies</li><li>Payoff date calculator</li><li>Interest savings</li><li>Visual progress</li></ul>
+      <div class="price">$3.99</div>
+      <a href="#" class="get-btn">Get It Now →</a>
+    </div>
+    <div class="product">
+      <span class="tag free">Free</span>
+      <div class="icon">🏦</div>
+      <h3>Monthly Budget Sheet</h3>
+      <p class="desc">Simple but powerful monthly budget. Track where every dollar goes.</p>
+      <ul class="features"><li>Income tracking</li><li>Expense categories</li><li>Savings allocation</li><li>Monthly comparison</li></ul>
+      <div class="price">FREE</div>
+      <a href="#" class="get-btn free-btn">Download Free →</a>
+    </div>
+  </div>
+
+  <!-- AI PROMPT PACKS -->
+  <div class="section-title">🤖 AI Prompt Packs</div>
+  <div class="products">
+    <div class="product">
+      <span class="tag">500+ Prompts</span>
+      <div class="icon">🧠</div>
+      <h3>Ultimate AI Prompt Bundle</h3>
+      <p class="desc">500+ tested prompts for ChatGPT & Claude. Marketing, coding, business, writing, and more.</p>
+      <ul class="features"><li>10 categories</li><li>Copy-paste ready</li><li>Advanced techniques</li><li>Free updates forever</li></ul>
+      <div class="price">$7.99 <span class="og">$14.99</span></div>
+      <a href="#" class="get-btn">Get It Now →</a>
+    </div>
+    <div class="product">
+      <div class="icon">📧</div>
+      <h3>Email Marketing Prompts</h3>
+      <p class="desc">100 prompts for subject lines, welcome sequences, sales emails, and re-engagement.</p>
+      <ul class="features"><li>Subject line formulas</li><li>Sequence templates</li><li>A/B test prompts</li><li>Industry examples</li></ul>
+      <div class="price">$3.99</div>
+      <a href="#" class="get-btn">Get It Now →</a>
+    </div>
+    <div class="product">
+      <span class="tag free">Free</span>
+      <div class="icon">💻</div>
+      <h3>Coding Assistant Prompts</h3>
+      <p class="desc">50 prompts to 10x your coding speed. Debug, refactor, explain, and generate code.</p>
+      <ul class="features"><li>Debugging prompts</li><li>Code review helpers</li><li>Documentation generators</li><li>Architecture planning</li></ul>
+      <div class="price">FREE</div>
+      <a href="#" class="get-btn free-btn">Download Free →</a>
+    </div>
+  </div>
+
+  <div class="ad-banner"><!-- AdSense Unit --></div>
+
+  <div class="cta-box">
+    <h3>Want custom products?</h3>
+    <p>Got a template idea? Drop a tip and a request on Cash App</p>
+    <a href="https://cash.app/$marcuzz315" target="_blank" class="tip-btn" style="padding:14px 36px;font-size:16px">💰 Tip $marcuzz315</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Marcuzz Digital Store — <a href="https://ai-toolhub.netlify.app">Free AI Tools</a> · <a href="https://marcuzz-links.netlify.app">All Links</a></p>
+    <p>Built by <a href="https://cash.app/$marcuzz315" target="_blank">$marcuzz315</a> • Powered by AI</p>
+  </footer>
+</div>
+</body>
+</html>
