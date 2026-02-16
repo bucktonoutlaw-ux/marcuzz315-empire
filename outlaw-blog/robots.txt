@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://outlaw-built-blog.netlify.app/sitemap.xml
